@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DemoLibrary
 {
-    public class Logger
+    public class Logger : ILogger
     {
-        public void Log (string message)
+        public void Log(string message)
         {
-            Console.WriteLine ($"Write to console : {message}");
+            Console.WriteLine($"Write to console : {message}");
         }
     }
 }
